@@ -4,6 +4,6 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(33, 34, 41);
-    color: rgb(215, 210, 231);
+    background-color: rgb(21, 21, 24);
+    color: rgb(226, 226, 226);
 }

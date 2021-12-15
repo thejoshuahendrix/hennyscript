@@ -44,6 +44,18 @@ Object.defineProperty(Array.prototype, "log", {
   },
 });
 
+Object.defineProperty(Number.prototype, "log", {
+  value: function () {
+    console.log(this);
+  },
+});
+
+Object.defineProperty(String.prototype, "log", {
+  value: function () {
+    console.log(this);
+  },
+});
+
 Object.defineProperty(String.prototype, "reverse", {
   value: function () {
     return this.split("").reverse().join("");

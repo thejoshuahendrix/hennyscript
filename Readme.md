@@ -24,7 +24,7 @@ Instead of:`filter()` To filter out a single value you can use: `filterOut(array
 
 Instead of:&emsp;`console.log(array)`&emsp;You can use:&emsp;`array.log()` replacing
 
-array with your array variable.
+array with your array variable, this also works for strings and numbers.
 
 
 Instead of:&emsp;`array.push()`&emsp;You can use:&emsp;`array.add()`

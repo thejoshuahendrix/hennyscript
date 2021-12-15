@@ -18,3 +18,8 @@ const getUrl = () => {
 const listen = (elementSelector, type, callback) =>
   get(elementSelector).addEventListener(type, callback);
 
+const numberSort = (array) => array.sort((a, b) => a - b);
+
+const filterOut = (array, valueToFilterOut) =>
+  array.filter((element) => element !== valueToFilterOut);
+

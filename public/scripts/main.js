@@ -5,7 +5,9 @@ const get = (selector) => {
 const getAll = (selector) => {
   return window.document.querySelectorAll(selector);
 };
+
 const delay = (callback, timeout) => setTimeout(callback, timeout);
+
 const loop = (handler, timeout) => setInterval(handler, timeout);
 
 const endLoop = (handler) => clearInterval(handler);
@@ -15,6 +17,7 @@ const endDelay = (handler) => clearTimeout(handler);
 const getUrl = () => {
   return window.document.URL;
 };
+
 const listen = (elementSelector, type, callback) =>
   get(elementSelector).addEventListener(type, callback);
 
@@ -34,11 +37,16 @@ Object.defineProperty(Array.prototype, "add", {
     return [...this, value];
   },
 });
+
 Object.defineProperty(Array.prototype, "log", {
   value: function () {
     console.log(this);
   },
 });
 
-const arr = ["l", "o", "l"];
-arr.log();
+Object.defineProperty(String.prototype, "reverse", {
+  value: function () {
+    return this.split("").reverse().join("");
+  },
+});
+

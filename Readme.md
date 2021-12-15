@@ -31,3 +31,5 @@ Instead of:&emsp;`array.push()`&emsp;You can use:&emsp;`array.add()`
 
 
 Instead of:&emsp;`array.toString()`&emsp;You can use:&emsp;`array.toWords()`
+
+You can reverse a string just by using ```"yourString".reverse()```

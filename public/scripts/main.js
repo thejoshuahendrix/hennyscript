@@ -23,3 +23,22 @@ const numberSort = (array) => array.sort((a, b) => a - b);
 const filterOut = (array, valueToFilterOut) =>
   array.filter((element) => element !== valueToFilterOut);
 
+Object.defineProperty(Array.prototype, "toWords", {
+  value: function () {
+    return [].concat(this).join("");
+  },
+});
+
+Object.defineProperty(Array.prototype, "add", {
+  value: function (value) {
+    return [...this, value];
+  },
+});
+Object.defineProperty(Array.prototype, "log", {
+  value: function () {
+    console.log(this);
+  },
+});
+
+const arr = ["l", "o", "l"];
+arr.log();

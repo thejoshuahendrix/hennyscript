@@ -24,23 +24,23 @@
         <br />
         <p>Here are some of the functions and their equivalents</p>
         <p>Instead of:&emsp;<code class="prettyprint">Document.querySelector()</code>&emsp;You can use:&emsp;<code class="prettyprint">get()</code></p>
-        <p>Instead of using:&emsp;<code class="prettyprint">DOMElement.addEventListener()</code>&emsp;You can use.
-            use:&emsp;<code class="prettyprint">listen(selector,eventType,callback)</code>&emsp;<br />Passing your selector for your object
+        <p>Instead of using:&emsp;<code class="prettyprint">DOMElement.addEventListener()</code>&emsp;You can use:
+            &emsp;<code class="prettyprint"><span class="nocode kwd">listen</span>(selector,eventType,callback)</code>&emsp;<br />Passing your selector for your object
             as the
             first parameter.</p>
-        <p>Instead of:&emsp;<code class="prettyprint">setTimeout()</code>&emsp;You can use:&emsp;<code class="prettyprint">delay()</code></p>
-        <p>Instead of:&emsp;<code class="prettyprint">setInterval()</code>&emsp;You can use:&emsp;<code class="prettyprint">loop()</code></p>
+        <p>Instead of:&emsp;<code class="prettyprint">setTimeout()</code>&emsp;You can use:&emsp;<code class="prettyprint"><span class="nocode kwd">delay</span>()</code></p>
+        <p>Instead of:&emsp;<code class="prettyprint">setInterval()</code>&emsp;You can use:&emsp;<code class="prettyprint"><span class="nocode kwd">loop</span>()</code></p>
         <p>Instead of:&emsp;<code class="prettyprint">
             Array.filter(item <span class="nocode">=&gt;</span> item !<span class="nocode">==</span> value)</code>&emsp; To filter out a single value you can
             use:&emsp;<code class="prettyprint">filterOut(Array, valueToFilterOut)</code>
         </p>
-        <p>Instead of:&emsp;<code class="prettyprint">Array.sort((a,b) <span class='nocode'>=&gt;</span>  a - b )</code>&emsp;You can use:&emsp;<code class="prettyprint">Array.numberSort()</code>&emsp;And it will
+        <p>Instead of:&emsp;<code class="prettyprint">Array.sort((a,b) <span class='nocode'>=&gt;</span>  a - b )</code>&emsp;You can use:&emsp;<code class="prettyprint"><span class="nocode kwd">numberSort</span>(Array)</code>&emsp;And it will
             automatically sort by value instead of lexigraphically.</p>
-        <p>Instead of:&emsp;<code class="prettyprint">console.log(Array)</code>&emsp;You can use:&emsp;<code class="prettyprint">Array.log()</code> replacing
+        <p>Instead of:&emsp;<code class="prettyprint">console.log(Array)</code>&emsp;You can use:&emsp;<code class="prettyprint">Array.<span class="nocode kwd">log</span>()</code> replacing
             Array with your Array variable. This also works with strings and numbers</p>
         <p>Instead of:&emsp;<code class="prettyprint">Array.push()</code>&emsp;You can use:&emsp;<code class="prettyprint">Array.add()</code></p>
-        <p>Instead of:&emsp;<code class="prettyprint">Array.toString()</code>&emsp;You can use:&emsp;<code class="prettyprint">Array.toWords()</code></p>
-        <p>You can reverse a string just by using <code class="prettyprint">&emsp;"yourString".reverse()</code></p>
+        <p>Instead of:&emsp;<code class="prettyprint">Array.toString()</code>&emsp;You can use:&emsp;<code class="prettyprint">Array.<span class="nocode kwd">toWords</span>()</code></p>
+        <p>You can reverse a string just by using <code class="prettyprint">&emsp;"yourString".<span class="nocode kwd">reverse</span>()</code></p>
         <p>Got new ideas for Hennyscript? Submit a pull request with your own changes or suggestions in the readme!</p>
         <h2>Copyright &copy;2021</h2>
     </div>
@@ -98,7 +98,7 @@
     }
 
     const effect = new Effect(canvas.width, canvas.height);
-    const fps = 10;
+    const fps = 8;
 
     function animate() {
 

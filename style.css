@@ -21,7 +21,7 @@ h1 {
 }
 p {
   font-size: 16px;
-  line-height: 40px;
+  line-height: 60px;
   color: rgba(250, 250, 250, 0.603);
 }
 #emoji {
@@ -64,7 +64,10 @@ h2 {
 canvas {
   color: rgba(116, 29, 151, 0.801);
 }
-
+code .nocode,
+span.nocode{
+  color:#1100ff;
+}
 pre .str,
 code .str {
   color: #5ed9ff;
@@ -87,23 +90,24 @@ code .typ {
 } /* literal - blue */
 pre .pun,
 code .pun {
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.767);
 } /* punctuation - white */
 pre .pln,
 code .pln {
-  color: rgba(219, 189, 21, 0.863);
+  color: rgba(63, 194, 194, 0.89);
 } /* plaintext - white */
+span .tag,
 pre .tag,
 code .tag {
-  color: #ff8989;
+  color: #898bff;
 } /* html/xml tag    - light blue */
 pre .atn,
 code .atn {
-  color: #bdb76b;
+  color: #bd6b6b;
 } /* html/xml attribute name  - khaki */
 pre .atv,
 code .atv {
-  color: #65b042;
+  color: #c1c424b9;
 } /* html/xml attribute value - green */
 pre .dec,
 code .dec {
@@ -121,8 +125,4 @@ pre.prettyprint {
   margin: 1em auto;
   padding: 1em;
   white-space: pre-wrap;
-}
-code .nocode,
-span.nocode{
-  color:#1100ff;
 }

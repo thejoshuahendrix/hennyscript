@@ -6,6 +6,10 @@ const getAll = (selector) => {
   return window.document.querySelectorAll(selector);
 };
 
+const grabContext = (selector) =>
+  window.document.querySelector(selector).getContext("2d");
+
+
 const delay = (callback, timeout) => setTimeout(callback, timeout);
 
 const loop = (handler, timeout) => setInterval(handler, timeout);
@@ -62,3 +66,62 @@ Object.defineProperty(String.prototype, "reverse", {
   },
 });
 
+const twoSum = (nums, target) => {
+  let map = new Map();
+
+  for (let i = 0; i < nums.length; i++) {
+    let num = nums[i];
+    if (map.get(num) === undefined) map.set(target - num, i);
+    else return [map.get(num), i];
+  }
+};
+
+const romanToInt = (s) => {
+  const legend = {
+    I: 1,
+    V: 5,
+    X: 10,
+    L: 50,
+    C: 100,
+    D: 500,
+    M: 1000,
+  };
+  let total = 0;
+
+  for (let i = 0; i < s.length; i++) {
+    if (legend[s[i]] < legend[s[i + 1]]) {
+      total += legend[s[i + 1]] - legend[s[i]];
+      i++;
+    } else {
+      total += legend[s[i]];
+    }
+  }
+
+  return total;
+};
+
+const intToRoman = (num) => {
+  let obj = {
+    M: 1000,
+    CM: 900,
+    D: 500,
+    CD: 400,
+    C: 100,
+    XC: 90,
+    L: 50,
+    XL: 40,
+    X: 10,
+    IX: 9,
+    V: 5,
+    IV: 4,
+    I: 1,
+  };
+  let str = "";
+  for (let key in obj) {
+    while (num >= obj[key]) {
+      str += key;
+      num -= obj[key];
+    }
+  }
+  return str;
+};

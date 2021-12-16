@@ -12,7 +12,7 @@ canvas {
 }
 h1 {
   font-size: 60px;
-  color: rgb(13, 139, 197);
+  color: rgba(13, 139, 197, 0.856);
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   padding: 40px;
@@ -22,10 +22,11 @@ h1 {
 p {
   font-size: 16px;
   line-height: 40px;
-  color: rgb(250, 250, 250);
+  color: rgba(250, 250, 250, 0.603);
 }
 #emoji {
   font-size: 45px;
+  color:rgba(255, 255, 255, 0.74);
 }
 div {
   width: 80%;
@@ -36,7 +37,7 @@ div {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   align-items: center;
   font-weight: normal;
-  color: rgb(122, 248, 179);
+  color: rgba(122, 248, 179, 0.459);
   gap: 20px;
   border-radius: 10px;
   padding: 30px;
@@ -53,7 +54,7 @@ code {
 
 h2 {
   font-size: 20px;
-  color: rgb(13, 108, 197);
+  color: rgba(13, 108, 197, 0.76);
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   padding: 40px;
@@ -61,7 +62,7 @@ h2 {
   box-shadow: 0px 2px 8px 8px rgba(0, 0, 0, 0.705);
 }
 canvas {
-  color: rgb(117, 29, 151);
+  color: rgba(116, 29, 151, 0.801);
 }
 
 pre .str,
@@ -79,7 +80,7 @@ code .com {
 } /* comment - gray */
 pre .typ,
 code .typ {
-  color: #a889ff;
+  color: rgba(91, 228, 125, 0.699);
 } /* type - light blue */
 .lit {
   color: #1100ff;
@@ -90,7 +91,7 @@ code .pun {
 } /* punctuation - white */
 pre .pln,
 code .pln {
-  color: rgb(255, 235, 119);
+  color: rgba(219, 189, 21, 0.863);
 } /* plaintext - white */
 pre .tag,
 code .tag {
@@ -121,74 +122,7 @@ pre.prettyprint {
   padding: 1em;
   white-space: pre-wrap;
 }
-
-/* Specify class=linenums on a pre to get line numbering */
-ol.linenums {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #aeaeae;
-} /* IE indents via margin-left */
-li.L0,
-li.L1,
-li.L2,
-li.L3,
-li.L5,
-li.L6,
-li.L7,
-li.L8 {
-  list-style-type: none;
-}
-/* Alternate shading for lines */
-li.L1,
-li.L3,
-li.L5,
-li.L7,
-li.L9 {
-}
-
-@media print {
-  pre .str,
-  code .str {
-    color: #060;
-  }
-  pre .kwd,
-  code .kwd {
-    color: #006;
-    font-weight: bold;
-  }
-  pre .com,
-  code .com {
-    color: #600;
-    font-style: italic;
-  }
-  pre .typ,
-  code .typ {
-    color: #404;
-    font-weight: bold;
-  }
-  pre .lit,
-  code .lit {
-    color: rgb(0, 47, 255);
-  }
-  pre .pun,
-  code .pun {
-    color: #440;
-  }
-  pre .pln,
-  code .pln {
-    color: #000;
-  }
-  pre .tag,
-  code .tag {
-    color: #006;
-    font-weight: bold;
-  }
-  pre .atn,
-  code .atn {
-    color: #404;
-  }
-  pre .atv,
-  code .atv {
-    color: #060;
-  }
+code .nocode,
+span.nocode{
+  color:#1100ff;
 }

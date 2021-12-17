@@ -8,7 +8,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     return to.concat(ar || Array.prototype.slice.call(from));
 };
 var get = function (selector) {
-    window.document.querySelector(selector);
+    return window.document.querySelector(selector);
 };
 var getAll = function (selector) {
     return window.document.querySelectorAll(selector);

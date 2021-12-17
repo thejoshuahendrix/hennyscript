@@ -61,6 +61,6 @@ Object.defineProperty(String.prototype, "reverse", {
 
 Object.defineProperty(Number.prototype, "reverse", {
     value: function () {
-        return this.split("").reverse().join("");
+        return Number(this.toString().split("").reverse().join(""));
     }
 })

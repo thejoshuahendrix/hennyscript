@@ -66,6 +66,12 @@ Object.defineProperty(String.prototype, "reverse", {
   },
 });
 
+Object.defineProperty(Number.prototype, "reverse", {
+  value: function () {
+    return this.split("").reverse().join("");
+  }
+})
+
 const twoSum = (nums, target) => {
   let map = new Map();
 

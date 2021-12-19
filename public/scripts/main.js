@@ -57,3 +57,8 @@ Object.defineProperty(Number.prototype, "reverse", {
         return Number(this.toString().split("").reverse().join(""));
     }
 });
+Object.defineProperty(String.prototype, "capitalize", {
+    value: function () {
+        return this.toUpper();
+    }
+});

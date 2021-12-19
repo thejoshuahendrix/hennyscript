@@ -1,5 +1,5 @@
 const get = (selector: keyof HTMLElement) => {
-    window.document.querySelector(selector);
+    return window.document.querySelector(selector);
 };
 
 const getAll = (selector: keyof HTMLElement) => {
@@ -62,5 +62,10 @@ Object.defineProperty(String.prototype, "reverse", {
 Object.defineProperty(Number.prototype, "reverse", {
     value: function () {
         return Number(this.toString().split("").reverse().join(""));
+    }
+})
+Object.defineProperty(String.prototype, "capitalize", {
+    value: function () {
+        return this.toUpper();
     }
 })
